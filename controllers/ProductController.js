@@ -13,7 +13,7 @@ const getAllProducts = async(req, res) => {
 const getProduct = async(req, res) => {
     const { id } = req.params;
     product = await getProductById(id);
-    res.status(201).send(product);
+    res.status(200).send(product);
 }
 
 const getAllCategories = async(req, res) => {
@@ -24,7 +24,7 @@ const getAllCategories = async(req, res) => {
 const getCategory = async(req, res) => {
     const { name } = req.params;
     category = await getCategoryByName(name);
-    res.status(201).send(category);
+    res.status(200).send(category);
 }
 
 module.exports = {
