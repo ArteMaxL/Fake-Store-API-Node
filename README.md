@@ -25,3 +25,7 @@ nuestra API.
 
 ## Documentación
 
+https://documenter.getpostman.com/view/17183774/VUjLK6aC
+
+## Rutas
+
