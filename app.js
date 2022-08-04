@@ -14,5 +14,5 @@ app.use('/users', dateRequest, userRouter);
 app.use(notFound);
 
 app.listen(PORT, () => {
-    console.log(`Example app listening on port ${PORT}`)
+    console.log(`Fake Store App listening on port ${PORT}`)
 });
