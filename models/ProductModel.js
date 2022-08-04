@@ -6,18 +6,24 @@ const getProducts = () => {
         .then(res => res.json());
 }
 
-/* const getProductsWithLimit = (limit) => {
-    return fetch(`https://fakestoreapi.com/products?${limit}`)
-        .then(res => res.json());
-} */
-
 const getProductById = (id) => {
     return fetch(`https://fakestoreapi.com/products/${id}`)
         .then(res => res.json());
 }
 
+const getCategories = () => {
+    return fetch('https://fakestoreapi.com/products/categories')
+        .then(res => res.json());
+}
+
+const getCategoryByName = (name) => {
+    return fetch(`https://fakestoreapi.com/products/category/${name}`)
+        .then(res => res.json());
+}
+
 module.exports = {
     getProducts,
-    //getProductsWithLimit,
     getProductById,
-}
+    getCategories,
+    getCategoryByName,
+};
