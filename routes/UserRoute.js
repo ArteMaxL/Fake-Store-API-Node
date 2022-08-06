@@ -3,11 +3,13 @@ const router = express.Router();
 
 const {
     getAllUsers,
-    getUser
+    getUser,
+    getFirstUsers,
 } = require('../controllers/UserController');
 
 router
     .get('/', getAllUsers)
-    .get('/:id', getUser);
+    .get('/:id', getUser)
+    .get('/firsts', getFirstUsers);
 
 module.exports = router;
