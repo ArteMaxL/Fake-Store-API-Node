@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const storeController = require('./controllers/storeController');
-const errorHandler = require('./middlewares/ErrorHandler');
+const storeController = require('../controllers/storeController');
+const errorHandler = require('../middlewares/ErrorHandler');
 
 //http://localhost:3000/products/categories/expensive
 router.get('/products/categories/expensive', storeController.getCategoryExpensive);
