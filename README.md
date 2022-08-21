@@ -52,7 +52,7 @@ http://localhost:3000/products/categories
 http://localhost:3000/products/prices
 
 * /products/:id
-http://localhost:3000/products/prices
+http://localhost:3000/products/5
 
 * /carts/bigcarts
 http://localhost:3000/carts/bigcarts
@@ -65,6 +65,9 @@ http://localhost:3000/users
 
 * /users/firsts
 http://localhost:3000/users/firsts
+
+* /users/:id
+http://localhost:3000/users/5
 
 * /
 http://localhost:3000/
