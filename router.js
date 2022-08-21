@@ -12,6 +12,7 @@ router.get('/products/', storeController.getProductMethods);
 //http://localhost:3000/products/categories
 router.get('/products/categories', storeController.getCategories);
 
+//http://localhost:3000/products/prices
 router.get('/products/prices', storeController.getProductPrices);
 
 //http://localhost:3000/products/:id
