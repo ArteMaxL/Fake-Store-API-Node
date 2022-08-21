@@ -13,6 +13,12 @@ const getUsersFirst = async (_req, res) => {
     res.status(200).send(firstUsers);
 };
 
+const getUserById = async (req, res) => {
+    const { id } = req.params;
+    let user = await storeModel.getUserId(id);
+    res.status(200).send(user);
+};
+
 //CATEGORIES
 const getCategories = async (_req, res) => {
     let categories = await storeModel.getCategory();
@@ -114,6 +120,7 @@ const storeController = {
     getProductMethods,
     getCarts,
     getUsers,
+    getUserById,
     getCategories,
     getUsersFirst,
     getProductPrices,

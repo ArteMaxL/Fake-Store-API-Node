@@ -30,6 +30,9 @@ router.get('/users', storeController.getUsers);
 //http://localhost:3000/users/firsts
 router.get('/users/firsts', storeController.getUsersFirst);
 
+//http://localhost:3000/users/:id
+router.get('/users/:id', storeController.getUserById);
+
 //http://localhost:3000/
 router.get('/', (_req, res) => {
     res.send('FAKE STORE API HOMEPAGE');
