@@ -40,12 +40,31 @@ nuestra API.
 ## Rutas
 
 * /products/categories/expensive
+http://localhost:3000/products/categories/expensive
+
 * /products/
+http://localhost:3000/products/
+
 * /products/categories
+http://localhost:3000/products/categories
+
 * /products/prices
+http://localhost:3000/products/prices
+
 * /products/:id
+http://localhost:3000/products/prices
+
 * /carts/bigcarts
+http://localhost:3000/carts/bigcarts
+
 * /carts
+http://localhost:3000/carts
+
 * /users
+http://localhost:3000/users
+
 * /users/firsts
+http://localhost:3000/users/firsts
+
 * /
+http://localhost:3000/
